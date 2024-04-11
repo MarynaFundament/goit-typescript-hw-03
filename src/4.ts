@@ -26,8 +26,7 @@ class Key {
     protected door: boolean = false;
     protected tenants: Person[] = [];
   
-    constructor(private key: Key) {}
-
+    constructor(public key: Key) {}
   
     abstract openDoor(key: Key): void;
   
